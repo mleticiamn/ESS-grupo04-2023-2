@@ -4,6 +4,14 @@ Scenario: Criar uma lista
 	And eu preencho o espaço de "Nome da Lista"
 	Then "Lista vazia" aparecerá na página de listas
 
+Scenario: Visualização de uma lista
+	Given eu estou na página do meu perfil
+	When eu seleciono a opção "Minhas Listas"
+	And eu sou direcionado para uma tela contendo todas as minhas listas
+	And eu seleciono a lista "Favoritos"
+	Then sou direcionado para a página da lista "Favoritos"
+	And eu consigo visualizar todos os filmes dessa lista
+
 Scenario: Adição de filmes nas listas
 	Given eu estou logado no meu perfil
 	When seleciono o filme "Mean Girls"
