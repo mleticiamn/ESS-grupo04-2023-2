@@ -15,3 +15,4 @@ Scenario: Falha em criar uma lista
 	When eu seleciono a opção "Criar Lista"
 	And eu não preencho  espaço "Nome da Lista"
 	Then uma mensagem de "Erro" aparecerá na tela
+	# Then hipotético pedido na questão 7i
